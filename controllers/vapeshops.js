@@ -19,7 +19,7 @@ exports.getVapeshop = (req, res, next) => {
 // @desc        Create vapeshop
 // @route       PUT /api/v1/vapeshops/:id
 // @access      Private
-exports.getVapeshop = (req, res, next) => {
+exports.updateVapeshop = (req, res, next) => {
   res
     .status(200)
     .json({ succes: true, msg: `Update vapeshop ${req.params.id}` });
@@ -28,7 +28,7 @@ exports.getVapeshop = (req, res, next) => {
 // @desc        Update vapeshop
 // @route       POST /api/v1/vapeshops/:id
 // @access      Private
-exports.getVapeshop = (req, res, next) => {
+exports.createVapeshop = (req, res, next) => {
   res
     .status(200)
     .json({ succes: true, msg: 'Create new vapeshop' });
@@ -37,7 +37,7 @@ exports.getVapeshop = (req, res, next) => {
 // @desc        Delete vapeshop
 // @route       DELETE /api/v1/vapeshops/:id
 // @access      Private
-exports.getVapeshop = (req, res, next) => {
+exports.deleteVapeshop = (req, res, next) => {
   res
     .status(200)
     .json({ succes: true, msg: `Delete vapeshop ${req.params.id}` });
